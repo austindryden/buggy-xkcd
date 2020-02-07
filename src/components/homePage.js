@@ -17,9 +17,10 @@ export default class HomePage extends React.Component {
   }
 
   render() {
+    
     return (
       <div>
-        {this.loading || !this.comic ? (
+        {this.state.loading || !this.state.comic ? (
           <div>loading...</div>
         ) : (
           <div>
